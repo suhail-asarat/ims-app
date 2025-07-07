@@ -1,0 +1,452 @@
+{
+  "general": {
+    "screenOrientation": {
+      "iphone": null,
+      "ipad": null,
+      "androidPhone": null,
+      "androidTablet": null
+    },
+    "userAgentRegexes": [],
+    "replaceStrings": [],
+    "nativeBridgeUrls": [],
+    "languages": [],
+    "userAgentAdd": "median",
+    "enableWindowOpen": true,
+    "forceUserAgent": "",
+    "publicKey": "qaxpdq",
+    "deviceRegKey": "8jkvz3vexuy1jcqrxzbgkeewpc",
+    "appName": "Bookshop IMS",
+    "initialUrl": "https://ug2002019.cse.pstu.ac.bd/ims-web/public",
+    "androidPackageName": "co.median.android.qaxpdq",
+    "iosBundleId": "co.median.ios.qaxpdq",
+    "keepScreenOn": null,
+    "iosUserAgentAdd": "median",
+    "iosForceUserAgent": "",
+    "androidUserAgentAdd": "median",
+    "androidForceUserAgent": "",
+    "androidSigningKey": "release",
+    "injectMedianJS": true,
+    "forceSessionCookieExpiry": 0,
+    "iosCustomHeaders": {},
+    "androidCustomHeaders": {},
+    "version": 5
+  },
+  "navigation": {
+    "tabNavigation": {
+      "tabSelectionConfig": [
+        {
+          "id": "1",
+          "regex": "https?:\\/\\/(w{3}\\.)?ug2002019.cse.pstu.ac.bd\\/ims-web\\/public(\\/.*)?$"
+        }
+      ],
+      "tabMenus": [
+        {
+          "items": [
+            {
+              "icon": "fas fa-home",
+              "inactiveIcon": "far fa-home",
+              "label": "Store",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public",
+              "subLinks": []
+            },
+            {
+              "label": "Cart",
+              "icon": "fas fa-cart-shopping",
+              "inactiveIcon": "far fa-cart-shopping",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/index.php/cart",
+              "subLinks": []
+            },
+            {
+              "label": "Sign In",
+              "icon": "fas fa-circle-user",
+              "inactiveIcon": "far fa-circle-user",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/index.php/login",
+              "subLinks": []
+            }
+          ],
+          "id": "1"
+        }
+      ],
+      "active": true
+    },
+    "sidebarNavigation": {
+      "menuSelectionConfig": {
+        "redirectLocations": [
+          {
+            "regex": ".*",
+            "menuName": "default",
+            "loggedIn": true
+          }
+        ]
+      },
+      "menus": [
+        {
+          "active": true,
+          "items": [
+            {
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/",
+              "label": "Home",
+              "subLinks": [],
+              "icon": "md mi-home"
+            },
+            {
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/books",
+              "label": "Books",
+              "subLinks": [],
+              "icon": "fas fa-book"
+            },
+            {
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/genres",
+              "label": "Genres",
+              "subLinks": [],
+              "icon": "md mi-interests"
+            },
+            {
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/authors",
+              "label": "Authors",
+              "subLinks": [],
+              "icon": "md mi-people"
+            },
+            {
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/publishers",
+              "label": "Publishers",
+              "subLinks": [],
+              "icon": "fas fa-print"
+            },
+            {
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/blog",
+              "label": "Blog",
+              "subLinks": [],
+              "icon": "md mi-web"
+            },
+            {
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/about",
+              "label": "About",
+              "subLinks": [],
+              "icon": "md mi-verified"
+            },
+            {
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/contact",
+              "label": "Contact",
+              "subLinks": [],
+              "icon": "md mi-email"
+            }
+          ],
+          "name": "default"
+        }
+      ]
+    },
+    "regexInternalExternal": {
+      "rules": [
+        {
+          "mode": "external",
+          "label": "Non-web links",
+          "pagesToTrigger": "custom",
+          "regex": "^(?!https?://).*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Facebook",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Twitter/X",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([\\-\\w]+\\.)*(twitter|x)\\.com/.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Instagram",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*instagram\\.com/.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Google Maps",
+          "pagesToTrigger": "custom",
+          "regex": "https?://maps\\.google\\.com.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Google Maps Search",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*google\\.com/maps/search/.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "LinkedIn",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*linkedin\\.com/.*"
+        },
+        {
+          "mode": "internal",
+          "label": "Microsoft Login",
+          "pagesToTrigger": "custom",
+          "regex": "https?://login\\.microsoftonline\\.com.*"
+        },
+        {
+          "mode": "internal",
+          "label": "All pages on my domain",
+          "pagesToTrigger": "domain",
+          "regex": "https?:\\/\\/([-\\w]+\\.)*pstu.ac.bd(\\/.*)?$"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "All Other Links",
+          "pagesToTrigger": "all",
+          "regex": ".*"
+        }
+      ],
+      "active": true
+    },
+    "androidPullToRefresh": true,
+    "iosPullToRefresh": true,
+    "navigationTitles": {
+      "titles": [],
+      "active": true
+    },
+    "ignorePageFinishedRegexes": [],
+    "actionConfig": {
+      "actions": [],
+      "actionSelection": [],
+      "active": true
+    },
+    "androidShowRefreshButton": false,
+    "iosShowRefreshButton": false,
+    "deepLinkDomains": {
+      "domains": [],
+      "enableAndroidApplinks": false
+    },
+    "navigationLevels": {
+      "levels": [],
+      "active": true
+    },
+    "toolbarNavigation": {
+      "enabled": false,
+      "visibilityByPages": "allPages",
+      "visibilityByBackButton": "backButtonActive",
+      "regexes": [
+        {
+          "enabled": true,
+          "regex": ".*"
+        }
+      ],
+      "items": [
+        {
+          "system": "back",
+          "titleType": "defaultText",
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        },
+        {
+          "system": "refresh",
+          "enabled": false,
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        },
+        {
+          "system": "forward",
+          "enabled": false,
+          "titleType": "defaultText",
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        }
+      ]
+    },
+    "redirects": [],
+    "iosShowOfflinePage": true,
+    "iosConnectionOfflineTime": 10,
+    "androidShowOfflinePage": true,
+    "androidConnectionOfflineTime": 10,
+    "iosSettings": {},
+    "swipeGestures": true,
+    "maxWindows": {
+      "enabled": false,
+      "numWindows": 5,
+      "autoClose": false
+    }
+  },
+  "styling": {
+    "splashScreen": {
+      "ios": {
+        "animationLoop": "once",
+        "backgroundColor": "#FFFFFF",
+        "backgroundColorDark": "#0E0D08",
+        "backgroundImage": "https://gonativeio.s3.amazonaws.com/app_files/qaxpdq/1751860282548_xy15cgmg1388a_FFFFFF_1_2x2.png?versionId=BhjrG9D2fbfIJbSmRQddI8pakU7Kqurt",
+        "backgroundImageDark": "https://gonativeio.s3.amazonaws.com/app_files/qaxpdq/1751860282574_yjjqk715mczfu_0E0D08_1_2x2.png?versionId=emxjGrJq7XJehP3_skpON6nI_ipPNeJu",
+        "animated": false,
+        "centerImage": "https://s3.amazonaws.com/gonativeio/app_files/qaxpdq/app_icon_android.png?versionId=VQN7S2kG0yKGmpQNvNVCrhUuhd4fWzYR",
+        "centerImageDark": "https://s3.amazonaws.com/gonativeio/app_files/qaxpdq/app_icon_android.png?versionId=VQN7S2kG0yKGmpQNvNVCrhUuhd4fWzYR",
+        "animation": null,
+        "animationDark": null,
+        "animationFrame": null,
+        "animationFrameDark": null
+      },
+      "android": {
+        "showSplash": true,
+        "animationLoop": "once",
+        "backgroundColor": "#FFFFFF",
+        "backgroundColorDark": "#0E0D08",
+        "animated": false,
+        "launchImages": {
+          "mdpi": "https://gonativeio.s3.amazonaws.com/app_files/qaxpdq/1751860282743_d3br6r3ykwfea_180x180.png?versionId=MWiqGte9qF4_ihRXLsQmDswNGAmvlcOd",
+          "hdpi": "https://gonativeio.s3.amazonaws.com/app_files/qaxpdq/1751860282764_q8kfbcybb4cec_270x270.png?versionId=.b_hGMc7Df2rJdgcR6cHWt8y9uuhwl8B",
+          "xhdpi": "https://gonativeio.s3.amazonaws.com/app_files/qaxpdq/1751860282782_pbbv48xdjh982_360x360.png?versionId=I1izwhsbQMbqmUMuZD5gy4ygBzDz7EdY",
+          "xxhdpi": "https://gonativeio.s3.amazonaws.com/app_files/qaxpdq/1751860282812_gctpf7f1v4b7c_540x540.png?versionId=HcApRK6Hg2ZYvlDGC8y8WPz_kuOeiMTl",
+          "xxxhdpi": "https://gonativeio.s3.amazonaws.com/app_files/qaxpdq/1751860282827_hykrza6duvv5u_720x720.png?versionId=6sSZ8n.bamYDk9ZW.sytQGRXAqT8undv"
+        },
+        "launchImagesDark": {
+          "mdpi": "https://gonativeio.s3.amazonaws.com/app_files/qaxpdq/1751860282855_t7k35ba782f5w_180x180.png?versionId=uDdQHKQYILVR.FgnXVhdWQDAVtAa7zOY",
+          "hdpi": "https://gonativeio.s3.amazonaws.com/app_files/qaxpdq/1751860282881_atkba9a142qm2_270x270.png?versionId=eIOWErcYvnpaM8AHTZQj12TkxyH_IQK7",
+          "xhdpi": "https://gonativeio.s3.amazonaws.com/app_files/qaxpdq/1751860282919_gy7pmb2529jqj_360x360.png?versionId=EvxnQ6Xgyeki_Jgs3lWM57A7u8uM0kd3",
+          "xxhdpi": "https://gonativeio.s3.amazonaws.com/app_files/qaxpdq/1751860282951_7q59vh3tfeef6_540x540.png?versionId=wbBObkGnBCZed7lO2713f7enypK8qcgo",
+          "xxxhdpi": "https://gonativeio.s3.amazonaws.com/app_files/qaxpdq/1751860283007_p9uzh1kg2tkyj_720x720.png?versionId=PkkTogUV4zOJJuA9KVg0H3e0il.t37Hy"
+        },
+        "animation": null,
+        "animationDark": null,
+        "animationFrame": null,
+        "animationFrameDark": null
+      }
+    },
+    "transitionInteractiveDelayMax": 0.2,
+    "menuAnimationDuration": 0.15,
+    "disableAnimations": false,
+    "hideWebviewAlpha": 0.5,
+    "iosDarkMode": "auto",
+    "iosTitleColor": "#0E0D08",
+    "iosTitleColorDark": "#ffffff",
+    "iosTintColor": "#0E0D08",
+    "iosTintColorDark": "#ffffff",
+    "iosSidebarTextColor": "#0E0D08",
+    "iosSidebarTextColorDark": "#ffffff",
+    "iosStatusBarBackgroundColor": "#ffffffff",
+    "iosStatusBarBackgroundColorDark": "#000000",
+    "iosEnableBlurInStatusBar": false,
+    "iosSidebarBackgroundColor": "#f8f8f8",
+    "iosSidebarBackgroundColorDark": "#202020",
+    "iosNavigationBarTintColor": "#f8f8f8",
+    "iosNavigationBarTintColorDark": "#202020",
+    "iosTabBarTintColor": "#f8f8f8",
+    "iosTabBarTintColorDark": "#000000",
+    "iosTabBarInactiveColor": "#A1A1A1",
+    "iosTabBarInactiveColorDark": "#818181",
+    "icon": "https://s3.amazonaws.com/gonativeio/app_files/qaxpdq/app_icon_android.png?versionId=VQN7S2kG0yKGmpQNvNVCrhUuhd4fWzYR",
+    "iosHeaderImage": "https://s3.amazonaws.com/gonativeio/app_files/qaxpdq/app_icon_android.png?versionId=VQN7S2kG0yKGmpQNvNVCrhUuhd4fWzYR",
+    "showActionBar": true,
+    "showNavigationBar": true,
+    "iosSidebarFont": "Default",
+    "androidHideTitleInActionBar": false,
+    "navigationTitleImage": false,
+    "iosTheme": "default",
+    "androidTheme": "auto",
+    "androidBackgroundColor": "#FFFFFF",
+    "androidSidebarBackgroundColor": "#FFFFFF",
+    "androidSidebarForegroundColor": "#1A100B",
+    "androidActionBarBackgroundColor": "#FFFFFF",
+    "androidActionBarForegroundColor": "#1A100B",
+    "androidPullToRefreshColor": "#1A100B",
+    "androidAccentColor": "#009688",
+    "androidSidebarSeparatorColor": "#CCCCCC",
+    "androidSidebarHighlightColor": "#1A100B",
+    "androidTabBarBackgroundColor": "#FFFFFF",
+    "androidTabBarTextColor": "#949494",
+    "androidTabBarIndicatorColor": "#1A100B",
+    "androidTabPressedBackgroundColor": "#CCCCCC",
+    "androidStatusBarBackgroundColor": "#5C5C5C",
+    "androidShowLogoInSideBar": true,
+    "androidShowAppNameInSideBar": true,
+    "androidSwipeNavigationBackgroundColor": "#FFFFFF",
+    "androidSwipeNavigationActiveColor": "#000000",
+    "androidSwipeNavigationInactiveColor": "#666666",
+    "androidActionBarBackgroundColorDark": "#333333",
+    "androidStatusBarBackgroundColorDark": "#333333",
+    "androidActionBarForegroundColorDark": "#FFFFFF",
+    "androidAccentColorDark": "#80cbc4",
+    "androidBackgroundColorDark": "#333333",
+    "androidSidebarForegroundColorDark": "#FFFFFF",
+    "androidSidebarBackgroundColorDark": "#333333",
+    "androidSidebarSeparatorColorDark": "#666666",
+    "androidSidebarHighlightColorDark": "#FFFFFF",
+    "androidPullToRefreshColorDark": "#FFFFFF",
+    "androidTabBarTextColorDark": "#FFFFFF",
+    "androidTabBarBackgroundColorDark": "#333333",
+    "androidTabBarIndicatorColorDark": "#666666",
+    "androidTabPressedBackgroundColorDark": "#999999",
+    "androidSwipeNavigationBackgroundColorDark": "#333333",
+    "androidSwipeNavigationActiveColorDark": "#FFFFFF",
+    "androidSwipeNavigationInactiveColorDark": "#666666",
+    "androidSystemNavBarColor": "#FFFFFF",
+    "androidSystemNavBarColorDark": "#000000",
+    "androidWebviewTextZoom": null,
+    "iosIcon": "https://s3.amazonaws.com/gonativeio/app_files/qaxpdq/app_icon_android.png?versionId=VQN7S2kG0yKGmpQNvNVCrhUuhd4fWzYR",
+    "customIcons": {
+      "fontelloSessionId": "afacb671036ddda4a08facef6bcf0b6e"
+    },
+    "iosStatusBarStyle": "auto",
+    "iosEnableOverlayInStatusBar": false,
+    "androidStatusBarStyle": "auto",
+    "androidEnableOverlayInStatusBar": false,
+    "androidIcon": "https://s3.amazonaws.com/gonativeio/app_files/qaxpdq/app_icon_android.png?versionId=VQN7S2kG0yKGmpQNvNVCrhUuhd4fWzYR",
+    "iosActivityIndicatorColor": "#808080",
+    "iosActivityIndicatorColorDark": "#808080",
+    "androidActivityIndicatorColor": "#808080",
+    "androidActivityIndicatorColorDark": "#808080",
+    "forceViewportWidth": null,
+    "pinchToZoom": null,
+    "iosDynamicType": null,
+    "navigationTitleImageLocation": "assets/defaults/app-icon-placeholder.png",
+    "navigationTitleImageLocationDark": "assets/defaults/app-icon-placeholder.png",
+    "androidHeaderImage": "assets/defaults/app-icon-placeholder.png",
+    "androidHeaderImageDark": "assets/defaults/app-icon-placeholder.png",
+    "iosHeaderImageDark": "https://s3.amazonaws.com/gonativeio/app_files/qaxpdq/app_icon_android.png?versionId=VQN7S2kG0yKGmpQNvNVCrhUuhd4fWzYR"
+  },
+  "permissions": {
+    "usesGeolocation": false,
+    "androidDownloadToPublicStorage": false,
+    "enableWebRTCamera": false,
+    "enableWebRTCMicrophone": false,
+    "iosLocationUsageDescription": "",
+    "iosCameraUsageDescription": "",
+    "iosMicrophoneUsageDescription": "",
+    "iOSATTUserTrackingDescription": "",
+    "iOSRequestATTConsentOnLoad": false
+  },
+  "developmentTools": {
+    "enableWebConsoleLogs": false
+  },
+  "services": {
+    "oneSignalV5": {
+      "active": false
+    }
+  },
+  "contextMenu": {
+    "linkActions": [
+      "copyLink",
+      "openExternal"
+    ],
+    "enabled": false
+  },
+  "allowZoom": null,
+  "security": {
+    "network": {
+      "allowInsecure": null
+    }
+  }
+}
