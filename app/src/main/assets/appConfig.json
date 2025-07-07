@@ -16,7 +16,7 @@
     "publicKey": "qaxpdq",
     "deviceRegKey": "8jkvz3vexuy1jcqrxzbgkeewpc",
     "appName": "Bookshop IMS",
-    "initialUrl": "https://ug2002019.cse.pstu.ac.bd/ims-web/public",
+    "initialUrl": "https://ug2002019.cse.pstu.ac.bd/ims-app-web/public",
     "androidPackageName": "co.median.android.qaxpdq",
     "iosBundleId": "co.median.ios.qaxpdq",
     "keepScreenOn": null,
@@ -27,16 +27,17 @@
     "androidSigningKey": "release",
     "injectMedianJS": true,
     "forceSessionCookieExpiry": 0,
+    "androidVersionName": "1.0.3",
     "iosCustomHeaders": {},
     "androidCustomHeaders": {},
-    "version": 5
+    "version": 16
   },
   "navigation": {
     "tabNavigation": {
       "tabSelectionConfig": [
         {
           "id": "1",
-          "regex": "https?:\\/\\/(w{3}\\.)?ug2002019.cse.pstu.ac.bd\\/ims-web\\/public(\\/.*)?$"
+          "regex": "https?:\\/\\/(w{3}\\.)?ug2002019.cse.pstu.ac.bd\\/ims-app-web\\/public(\\/.*)?$"
         }
       ],
       "tabMenus": [
@@ -46,21 +47,21 @@
               "icon": "fas fa-home",
               "inactiveIcon": "far fa-home",
               "label": "Store",
-              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-app-web/public",
               "subLinks": []
             },
             {
               "label": "Cart",
               "icon": "fas fa-cart-shopping",
               "inactiveIcon": "far fa-cart-shopping",
-              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/index.php/cart",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-app-web/public/index.php/cart",
               "subLinks": []
             },
             {
-              "label": "Sign In",
+              "label": "Profile",
               "icon": "fas fa-circle-user",
               "inactiveIcon": "far fa-circle-user",
-              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/index.php/login",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-app-web/public/index.php/login",
               "subLinks": []
             }
           ],
@@ -84,49 +85,49 @@
           "active": true,
           "items": [
             {
-              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-app-web/public/",
               "label": "Home",
               "subLinks": [],
               "icon": "md mi-home"
             },
             {
-              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/books",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-app-web/public/books",
               "label": "Books",
               "subLinks": [],
               "icon": "fas fa-book"
             },
             {
-              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/genres",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-app-web/public/genres",
               "label": "Genres",
               "subLinks": [],
               "icon": "md mi-interests"
             },
             {
-              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/authors",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-app-web/public/authors",
               "label": "Authors",
               "subLinks": [],
               "icon": "md mi-people"
             },
             {
-              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/publishers",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-app-web/public/publishers",
               "label": "Publishers",
               "subLinks": [],
               "icon": "fas fa-print"
             },
             {
-              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/blog",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-app-web/public/blog",
               "label": "Blog",
               "subLinks": [],
               "icon": "md mi-web"
             },
             {
-              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/about",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-app-web/public/about",
               "label": "About",
               "subLinks": [],
               "icon": "md mi-verified"
             },
             {
-              "url": "https://ug2002019.cse.pstu.ac.bd/ims-web/public/contact",
+              "url": "https://ug2002019.cse.pstu.ac.bd/ims-app-web/public/contact",
               "label": "Contact",
               "subLinks": [],
               "icon": "md mi-email"
@@ -191,6 +192,14 @@
           "label": "All pages on my domain",
           "pagesToTrigger": "domain",
           "regex": "https?:\\/\\/([-\\w]+\\.)*pstu.ac.bd(\\/.*)?$"
+        },
+        {
+          "mode": "internal",
+          "label": "SSLCOMMERZ",
+          "regex": "https?://([-\\w]+\\.)*sslcommerz\\.com/.*",
+          "url": "https://",
+          "custom": true,
+          "pagesToTrigger": "custom"
         },
         {
           "mode": "appbrowser",
@@ -276,7 +285,7 @@
     "androidShowOfflinePage": true,
     "androidConnectionOfflineTime": 10,
     "iosSettings": {},
-    "swipeGestures": true,
+    "swipeGestures": false,
     "maxWindows": {
       "enabled": false,
       "numWindows": 5,

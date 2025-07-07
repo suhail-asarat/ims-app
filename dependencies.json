@@ -1,4 +1,5 @@
 {
   "core": "2.7.11",
-  "plugins": {}
+  "plugins": {},
+  "engineVersion": "1.0.5"
 }

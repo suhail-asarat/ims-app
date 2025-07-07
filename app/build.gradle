@@ -94,7 +94,7 @@ android {
         minSdkVersion 23
         targetSdkVersion 36
         applicationId "co.median.android.qaxpdq"
-        versionCode 3
+        versionCode 10
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
 
